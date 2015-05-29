@@ -54,7 +54,8 @@ assert(1 === 2, 'this is an assertion failure example. 1 === 2');
  it failed.
 */
 
-//your code goes here
+assert('tigers' > 'elephants');
+assert('elephants' > 'penguins', 'Penguins are obviously cooler than elephants.');
 
 /* ----------------- Meerkats -------------------------------------------------
  Meerkats make a sort of chirping noise (according to my 30 seconds of
@@ -72,6 +73,9 @@ var sentence2 = 'Come over here so you can scratch my belly.';
  HINT: the 'split' method on String will be useful.
 */
 
+for (var i = 0; i < 3; i++) {
+  sentence1.split(' ');
+}
 //your code goes here
 
 assert(sentence1 === 'chirp chirp chirp.', 'sentence 1 should have 3 chirps');
