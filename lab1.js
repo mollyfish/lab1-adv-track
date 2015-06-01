@@ -73,10 +73,17 @@ var sentence2 = 'Come over here so you can scratch my belly.';
  HINT: the 'split' method on String will be useful.
 */
 
-for (var i = 0; i < 3; i++) {
-  sentence1.split(' ');
-}
-//your code goes here
+
+  var wordsOne = sentence1.split(' ');
+  console.log(wordsOne);
+  for (var i = 0; i < wordsOne.length; i++) {
+    wordsOne.pop();
+    wordsOne.push('chirp');
+  }
+  wordsOne.push('.');
+  console.log(wordsOne);
+  // var lastWordOne = wordsOne[2].slice(0, 6);
+  // console.log(lastWordOne);
 
 assert(sentence1 === 'chirp chirp chirp.', 'sentence 1 should have 3 chirps');
 assert(sentence2 === 'chirp chirp chirp chirp chirp chirp chirp chirp chirp.',
