@@ -78,7 +78,8 @@ var sentence2 = "Come over here so you can scratch my belly.";
     w1.splice(0, 1);
     w1.push("chirp");
   }
-  var sentence1 = w1[0] + " " + w1[1] + " " + w1[2] + ".";
+  var sentence = w1.join(" ");
+  sentence1 = sentence + ".";
   var w2 = sentence2.split(" ");
   var reps = 0;
   while (reps < w2.length) {
@@ -86,9 +87,8 @@ var sentence2 = "Come over here so you can scratch my belly.";
     w2.push("chirp");
     reps++;
   }
-  var firstHalf = w2[0] + " " + w2[1] + " " + w2[2] + " " + w2[3] + " " + w2[4];
-  var secondHalf = " " + w2[5] + " " + w2[6] + " " + w2[7] + " " + w2[8] + ".";
-  var sentence2 = firstHalf + secondHalf;
+  sentence = w2.join(" ");
+  sentence2 = sentence + ".";
 
 assert(sentence1 === "chirp chirp chirp.", "sentence 1 should have 3 chirps");
 assert(sentence2 === "chirp chirp chirp chirp chirp chirp chirp chirp chirp.",
